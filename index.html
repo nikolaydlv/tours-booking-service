@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туры по самым инстересным направлениям</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./libs/autoComplete/css/autoComplete.01.css">
+    <link rel="stylesheet" href="./libs/custom-select/custom-select.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container container--header">
+
+            <nav class="nav">
+                <a href="" class="logo">
+                    <img src="./img/logo/logo.svg" alt="logo">
+                </a>
+
+                <ul class="nav-list">
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link nav-list__link--active">Главная</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">Отели</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">Рестораны</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">Туры</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">Направления</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">Активности</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">Контакты</a>
+                    </li>
+                </ul>
+
+                <div class="user">
+                    <div class="user__content">
+                        <span class="user__greeting">Привет,</span>
+                        <span class="user__name">Мария Иванова</span> 
+                    </div>
+                    <div class="user__avatar">
+                        <img class="user__img" src="./img/header/user.jpg" alt="avatar">
+                    </div>
+                </div>
+
+            </nav>
+
+            <div class="header__content">
+                <h1 class="header__title">
+                    Откройте для себя самые интересные места России
+                </h1>
+                <button class="button button--huge">
+                    <img src="./img/icons/global.svg" alt="">
+                    Просмотреть на 3D карте</button>
+            </div>
+
+
+            <form action="" class="form">
+
+                <div class="form__input-wrapper form__input--location">
+                    <label for="location" class="form__label">Направление</label>
+                    <input type="text" class="form__input" id="location" placeholder="Выбрать ближайшие направления">
+                </div>
+
+                <div class="form__input-wrapper form__input--activity">
+                    <label for="activity" class="form__label">Активности</label>
+                    <select name="activity" id="activity" class="form__select">
+                        <option value="all">Все активности</option>
+                        <option value="culture">Культура</option>
+                        <option value="sport">Спорт</option>
+                        <option value="extreme">Экстрим</option>
+                    </select>
+                </div>
+
+                <div class="form__input-wrapper form__input--date">
+                    <label for="date" class="form__label">Когда</label>
+                    <input type="text" class="form__input" id="date" placeholder="Выбрать дату">
+                </div>
+
+                <div class="form__input-wrapper form__input--guests">
+                    <label for="guests" class="form__label">Гости</label>
+                    <select class="form__select" name="guests" id="guests">
+                        <option value="">1 гость</option>
+                        <option value="">2 гостя</option>
+                        <option value="">3 гостя</option>
+                        <option value="">4 гостя и более</option>
+                    </select>
+                </div>
+
+                <button class="button button-search">
+                    <img src="./img/icons/search.svg" alt="search">
+                </button>
+
+
+            </form>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <!--Popular-->
+        <section class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="title-1">Популярные направления</h2>
+                </div>
+                <div class="section__cards section__cards--popular">
+
+                    <article class="card">
+                        <a href="#!" class="card__link"></a>
+                        <img class="card__img" src="./img/popular/01.jpg" alt="Img">
+                        <h3 class="card__title">Кремль</h3>
+                        <a href="#california" class="card__location">Москва, Россия</a>
+                    </article>
+
+                    <article class="card">
+                        <a href="#!" class="card__link"></a>
+                        <img class="card__img" src="./img/popular/02.jpg" alt="Img">
+                        <h3 class="card__title">Красная поляна</h3>
+                        <a href="#california" class="card__location">Сочи, Россия</a>
+                    </article>
+
+                    <article class="card">
+                        <a href="#!" class="card__link"></a>
+                        <img class="card__img" src="./img/popular/03.jpg" alt="Img">
+                        <h3 class="card__title">Исаакиевский собор</h3>
+                        <a href="#california" class="card__location">Санкт-Петербург, Россия</a>
+                    </article>
+
+                    <article class="card">
+                        <a href="#!" class="card__link"></a>
+                        <img class="card__img" src="./img/popular/04.jpg" alt="Img">
+                        <h3 class="card__title">Кул Шариф</h3>
+                        <a href="#california" class="card__location">Казань, Россия</a>
+                    </article>
+
+                    <article class="card">
+                        <a href="#!" class="card__link"></a>
+                        <img class="card__img" src="./img/popular/05.jpg" alt="Img">
+                        <h3 class="card__title">Родина-мать</h3>
+                        <a href="#california" class="card__location">Волгоград, Россия</a>
+                    </article>
+
+                    <article class="card">
+                        <a href="#!" class="card__link"></a>
+                        <img class="card__img" src="./img/popular/06.jpg" alt="Img">
+                        <h3 class="card__title">Чкаловская лестница</h3>
+                        <a href="#california" class="card__location">Нижний Новгород, Россия</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!--Hotel-->
+        <section class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="title-1">Отели и рестораны</h2>
+                    <a href="#!" class="button-more">
+                        Показать все
+                        <img src="./img/icons/arrow-more.svg" alt="Arrow">
+                    </a>
+                </div>
+                <div class="section__cards section__cards--4-in-row">
+                    <article class="card">
+                        <a href="#!" class="card__link"></a>
+                        <img class="card__img card__img--hotel" src="./img/hotels/01.jpg" alt="Img">
+                        <h3 class="card__title card__title--hotel">Raddison Collection Hotel</h3>
+
+                        <footer class="card__footer">
+                            <a href="#!" class="card__location card__location--icon">Москва, Россия</a>
+                            <div class="card__rating">
+                                <img src="./img/icons/star.svg" alt="">
+                                <img src="./img/icons/star.svg" alt="">
+                                <img src="./img/icons/star.svg" alt="">
+                                <img src="./img/icons/star.svg" alt="">
+                                <img src="./img/icons/star.svg" alt="">
+                            </div>
+                        </footer>
+                    </article>
+
+                    <article class="card">
+                        <a href="#!" class="card__link"></a>
+                        <img class="card__img card__img--hotel" src="./img/hotels/02.jpg" alt="Img">
+                        <h3 class="card__title card__title--hotel">AZIMUT Смоленская</h3>
+
+                        <footer class="card__footer">
+                            <a href="#Salerno" class="card__location card__location--icon">Москва, Россия</a>
+                            <div class="card__rating">
+                                <img src="./img/icons/star.svg" alt="">
+                                <img src="./img/icons/star.svg" alt="">
+                                <img src="./img/icons/star.svg" alt="">
+                                <img src="./img/icons/star.svg" alt="">
+                                <img src="./img/icons/star-line.svg" alt="">
+                            </div>
+                        </footer>
+                    </article>
+
+                    <article class="card">
+                        <a href="#!" class="card__link"></a>
+                        <img class="card__img card__img--hotel" src="./img/hotels/03.jpg" alt="Img">
+                        <h3 class="card__title card__title--hotel">Рамада Казань Сити Центр</h3>
+
+                        <footer class="card__footer">
+                            <a href="#Salerno" class="card__location card__location--icon">Казань, Россия</a>
+                            <div class="card__rating">
+                                <img src="./img/icons/star.svg" alt="">
+                                <img src="./img/icons/star.svg" alt="">
+                                <img src="./img/icons/star.svg" alt="">
+                                <img src="./img/icons/star.svg" alt="">
+                                <img src="./img/icons/star-line.svg" alt="">
+                            </div>
+                        </footer>
+                    </article>
+
+                    <article class="card">
+                        <a href="#!" class="card__link"></a>
+                        <img class="card__img card__img--hotel" src="./img/hotels/04.jpg" alt="Img">
+                        <h3 class="card__title card__title--hotel">Риксос Красная Поляна Сочи</h3>
+
+                        <footer class="card__footer">
+                            <a href="#Salerno" class="card__location card__location--icon">Сочи, Россия</a>
+                            <div class="card__rating">
+                                <img src="./img/icons/star.svg" alt="">
+                                <img src="./img/icons/star.svg" alt="">
+                                <img src="./img/icons/star.svg" alt="">
+                                <img src="./img/icons/star.svg" alt="">
+                                <img src="./img/icons/star.svg" alt="">
+                            </div>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!--Travel tips and advise-->
+        <section class="section">
+            <div class="container">
+
+                <header class="section__header">
+                    <h2 class="title-1">Туристические заметки и советы</h2>
+                    <a href="#!" class="button-more">
+                        Показать все
+                        <img src="./img/icons/arrow-more.svg" alt="Arrow">
+                    </a>
+                </header>
+
+                <div class="section__cards section__cards--2-in-row">
+                    <article class="card card--wide">
+                        <a href="#!" class="card__link"></a>
+                        <img class="card__img card__img--no-margin" src="./img/tips/01.jpg" alt="Img">
+                        <div class="card__desc">
+                            <h3 class="card__title card__title--big">Горнолыжный курорт красная поляна</h3>
+                            <p class="card__text">Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров</p>
+                            <footer class="card__footer card__footer--wide">
+                                <a href="#" class="card__footer-link card__footer-link--date">Сегодня</a>
+                                <a href="#" class="card__footer-link card__footer-link--author">Мария Иванова</a>
+                                <a href="#" class="card__footer-link card__footer-link--comments">2</a>
+                            </footer>
+                        </div>
+                    </article>
+                    <article class="card card--wide">
+                        <a href="#!" class="card__link"></a>
+                        <img class="card__img card__img--no-margin" src="./img/tips/02.jpg" alt="Img">
+                        <div class="card__desc">
+                            <h3 class="card__title card__title--big">Нижегородский кремль</h3>
+                            <p class="card__text">Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров</p>
+                            <footer class="card__footer card__footer--wide">
+                                <a href="#" class="card__footer-link card__footer-link--date">Сегодня</a>
+                                <a href="#" class="card__footer-link card__footer-link--author">Мария Иванова</a>
+                                <a href="#" class="card__footer-link card__footer-link--comments">2</a>
+                            </footer>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+         <!--Activities-->
+         <section class="section">
+            <div class="container">
+
+                <header class="section__header">
+                    <h2 class="title-1">Активности</h2>
+                    <a href="#!" class="button-more">
+                        Показать все
+                        <img src="./img/icons/arrow-more.svg" alt="Arrow">
+                    </a>
+                </header>
+
+                <div class="section__cards section__cards--4-in-row">
+                    <article class="card">
+                        <a href="#!" class="card__link"></a>
+                        <img class="card__img card__img--activities" src="./img/activity/01.jpg" alt="Img">
+                        <h3 class="card__title">Музеи</h3>
+                    </article>
+                    <article class="card">
+                        <a href="#!" class="card__link"></a>
+                        <img class="card__img card__img--activities" src="./img/activity/02.jpg" alt="Img">
+                        <h3 class="card__title">Прогулки</h3>
+                    </article>
+                    <article class="card">
+                        <a href="#!" class="card__link"></a>
+                        <img class="card__img card__img--activities" src="./img/activity/03.jpg" alt="Img">
+                        <h3 class="card__title">Горные лыжи</h3>
+                    </article>
+                    <article class="card">
+                        <a href="#!" class="card__link"></a>
+                        <img class="card__img card__img--activities" src="./img/activity/04.jpg" alt="Img">
+                        <h3 class="card__title">Хайкинг</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+            <!-- About Us -->
+            <section class="section">
+                <div class="container">
+                    <div class="about-us">
+                        <div class="about-us__desc">
+                            <h3 class="about-us__title">О нас</h3>
+                            <p class="about-us__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a sapien justo. Nulla facilisis tristique imperdiet. Nullam a placerat odio. Sed in ex augue. Aliquam porta consectetur lorem sit amet ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                            <div class="about-us__btn">
+                                <a href="#" class="button-more">Читать далее<img src="./img/icons/arrow-more.svg" alt="Arrow"></a>
+                            </div>
+                        </div>
+                        <img src="./img/about-us/about.jpg" alt="" class="about-us__img">
+                    </div>
+                </div>
+            </section>
+    </main>
+
+
+
+
+    <script src="./libs/autoComplete/autoComplete.min.js"></script>
+    <script src="./libs/custom-select/custom-select.min.js"></script>
+    <script src="./libs/easepick/easepick.min.js"></script>
+
+    <script src="./js/inputDest.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
