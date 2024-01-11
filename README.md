@@ -1,1 +1,1 @@
-# tourism-booking-service
+# Service for searching and booking tours
