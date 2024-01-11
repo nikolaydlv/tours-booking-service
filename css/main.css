@@ -59,9 +59,6 @@ body {
     text-transform: capitalize;
 }
 
-.nav-list__item {
-}
-
 .nav-list__link {
 	opacity: 0.7;
 }
@@ -311,18 +308,10 @@ body {
 
 /* Tips */
 
-
-
-.card__img {
-}
-
 .card__desc {
     display: flex;
     flex-direction: column;
     gap: 16px;
-}
-.card__title {
-
 }
 
 .card__title--big {
@@ -335,9 +324,6 @@ body {
     color: #585858;
     font-size: 16px;
     line-height: 2;
-}
-
-.card__footer {
 }
 
 .card__footer--wide {
@@ -407,4 +393,118 @@ body {
     border-radius: 24px;
     height: 100%;
     object-fit: cover;
+}
+
+/* Footer */
+
+.footer {
+    padding: 120px 0;
+    background-color: #f9f9f9;
+}
+
+.footer__row {
+    display: grid;
+    gap: 64px;
+    grid-template-columns: repeat(3, auto);
+}
+
+.footer__copyright {
+    max-width: 354px;
+    display: grid;
+    gap: 16px;
+}
+
+.footer__text {
+    margin-bottom: 16px;
+    font-size: 13px;
+    color: #585858;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+/* Footer Nav */
+
+.footer__nav-wrapper {
+    display: flex;
+    gap: 64px;
+}
+
+.footer__nav {
+    display: grid;
+    grid-template: 20px;
+}
+
+.footer__nav-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer__nav-list {
+    display: grid;
+    gap: 12px;
+}
+
+.footer__nav-link {
+    color: #585858;
+    font-size: 13px;
+}
+
+.footer__nav-link:hover {
+    color: #7B61FF;
+}
+
+/* Subscribe */
+
+.footer__subscribe {
+    min-width: 388px;
+}
+
+.footer__subscribe-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.subscribe {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.subscribe__input-wrapper {
+    position: relative;
+}
+
+.subscribe__input {
+    padding: 32px 20px 16px 56px;
+    width: 300px;
+    height: 72px;
+    background-color: #fff;
+    border-radius: 12px;
+    background-image: url(../img/icons/email.svg);
+    background-repeat: no-repeat;
+    background-position: 18px 27px;
+}
+
+.subscribe__label {
+    position: absolute;
+    top: 26px;
+    left: 56px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #585858;
+    transition: all 0.2s ease-in;
+    pointer-events: none;
+}
+
+.subscribe__input:focus ~ .subscribe__label,
+.subscribe__input:valid ~ .subscribe__label {
+    top: 16px;
+}
+
+.subscribe__label--top {
+    top: 16px;
 }
