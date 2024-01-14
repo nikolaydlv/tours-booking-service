@@ -47,6 +47,8 @@ body {
 
 .logo {
 	flex-shrink: 0;
+    width: 120px;
+    height: 60px;
 }
 
 /* Nav list */
