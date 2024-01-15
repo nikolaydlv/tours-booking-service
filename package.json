@@ -1,0 +1,27 @@
+{
+  "name": "tourism-booking-service",
+  "version": "1.0.0",
+  "description": "booking-service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve",
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [],
+  "author": "Nikolay Danilov",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.9.0",
+    "gh-pages": "^6.1.1",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.7.7",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
