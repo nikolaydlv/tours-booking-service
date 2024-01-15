@@ -5,3 +5,5 @@
 # Service for searching and booking tours
 
 This project was made to practice layout using a template from Figma using pure HTML and CSS. Also, several interactive elements were added to it using pure JavaScript and connecting several third-party libraries. The site is adapted for various devices.
+<br/>
+[Explore the demo by following this link](https://nikolaydlv.github.io/tours-booking-service/)
