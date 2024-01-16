@@ -65,6 +65,10 @@ body {
 	opacity: 0.7;
 }
 
+.nav-list__link:hover {
+	opacity: 1;
+}
+
 .nav-list__link--active {
 	opacity: 1;
 }
@@ -190,6 +194,21 @@ body {
 
 .form__input::placeholder {
     color: #000;
+}
+
+.form__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form__extra__btn {
+    text-align: right;
+}
+
+.route__img {
+    height: 20px;
+    width: 20px;
 }
 
 /* Main */
