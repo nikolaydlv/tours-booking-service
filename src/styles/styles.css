@@ -551,3 +551,51 @@ body {
 .subscribe__label--top {
     top: 16px;
 }
+
+/* Footer Mobile apps */
+
+.footer__row-apps {
+    padding: 40px 0;
+    display: grid;
+    gap: 64px;
+    grid-template-columns: repeat(2, auto);
+    color: #fff;
+}
+
+.footer_mobile_apps {
+    background-color: #333333;
+}
+
+.store__badge__img {
+    width: 164px;
+    height: 58px;
+}
+
+.mobile__app__title {
+    margin-bottom: 15px;
+}
+
+.stores__badges {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.qr__code {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.qr__code_img {
+    height: 80px;
+    width: 80px;
+    border: 5px solid #fff;
+}
+
+.qr_code_title {
+    margin-bottom: 10px;
+}
+
+.qr__code__text {
+    color: #bfbfbf;
+}
