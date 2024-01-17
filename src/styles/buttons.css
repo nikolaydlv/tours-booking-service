@@ -19,6 +19,13 @@
     align-items: center;
 }
 
+@media only screen and (max-width: 600px) {
+    .button--huge {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
 .button-search {
     width: 60px;
     height: 60px;
