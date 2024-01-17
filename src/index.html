@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./libs/autoComplete/css/autoComplete.01.css">
     <link rel="stylesheet" href="./libs/custom-select/custom-select.css">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/media.css">
 </head>
 <body>
     <header class="header">
@@ -41,15 +42,21 @@
                     </li>
                 </ul>
 
-                <div class="user">
-                    <div class="user__content">
-                        <span class="user__greeting">Привет,</span>
-                        <span class="user__name">Мария Иванова</span> 
-                    </div>
-                    <div class="user__avatar">
-                        <img class="user__img" src="./img/header/user.jpg" alt="avatar">
+                <div class="nav__user">
+                    <div class="user">
+                        <div class="user__content">
+                            <span class="user__greeting">Привет,</span>
+                            <span class="user__name">Мария Иванова</span> 
+                        </div>
+                        <div class="user__avatar">
+                            <img class="user__img" src="./img/header/user.jpg" alt="avatar">
+                        </div>
                     </div>
                 </div>
+
+                <button class="mobile-nav-btn">
+                    <div class="nav-icon"></div>
+                </button>
 
             </nav>
 
@@ -136,6 +143,18 @@
         </div>
     </header>
 
+    <div class="mobile-nav-fade"></div>
+    <div class="mobile-nav">
+        <ul class="mobile-nav__list">
+            <li><a href="" class="active">Главная</a></li>
+            <li><a href="">Отели</a></li>
+            <li><a href="">Рестораны</a></li>
+            <li><a href="">Туры</a></li>
+            <li><a href="">Направления</a></li>
+            <li><a href="">Активности</a></li>
+            <li><a href="">Контакты</a></li>
+        </ul>
+    </div>
 
     <main class="main">
         <!--Popular-->
@@ -509,6 +528,7 @@
     <script src="./libs/easepick/easepick.min.js"></script>
 
     <script src="./js/inputDest.js"></script>
+    <script src="./js/mobile-nav.js"></script>
     <script src="./index.js"></script>
 </body>
 </html>

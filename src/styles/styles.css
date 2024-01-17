@@ -1,6 +1,8 @@
 @import './reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 @import './buttons.css';
+@import './nav-icon.css';
+@import './mobile-nav.css';
 
 body {
 	font-family: 'Montserrat', sans-serif;
@@ -33,7 +35,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-    align-items: center;
 }
 
 /* Nav */
