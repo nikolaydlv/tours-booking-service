@@ -35,6 +35,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+    align-items: center;
 }
 
 /* Nav */
@@ -599,4 +600,18 @@ body {
 
 .qr__code__text {
     color: #bfbfbf;
+}
+
+@media (max-width: 1139px) {
+    .nav-list {
+        display: none;
+    }
+
+    .nav__user {
+        display: none;
+    }
+
+    .mobile-nav-btn {
+        display: block;
+    }
 }

@@ -8,7 +8,7 @@ module.exports = {
     filename: 'bundle.js', // Имя выходного файла сборки
     path: path.resolve(__dirname, 'dist'), // Путь для выходного файла сборки
   },
-  
+
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
@@ -16,20 +16,20 @@ module.exports = {
   ],
   module: {
     rules: [
-        {
-            test: /\.html$/,
-            use: 'html-loader'
-        },
-        {
-            test: /\.css$/,
-            use: ['style-loader', 'css-loader']
-        },
-        {
-            test: /\.(jpg|png|svg|jpeg|gif)$/,
-            type: 'asset/resource'
-        }
-    ]
-},
+      {
+        test: /\.html$/,
+        use: 'html-loader',
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(jpg|png|svg|jpeg|gif)$/,
+        type: 'asset/resource',
+      },
+    ],
+  },
 
   devServer: {
     static: {
