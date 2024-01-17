@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable new-cap */
 const destinationList = [
   'Москва',
   'Санкт-Петербург',
